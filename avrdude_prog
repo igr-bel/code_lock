@@ -1,0 +1,2 @@
+avrdude -p m168p -c usbasp -P usb -e -U flash:w:/home/a_props/Documents/Arduino_projects/code_panel/code_panel.ino.eightanaloginputs.hex -U lfuse:w:0xfd:m -U hfuse:w:0xdd:m -U efuse:w:0xff:m
+

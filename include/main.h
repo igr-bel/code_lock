@@ -16,11 +16,6 @@
 #define WRONG_CODE_STATE			3
 
 //------------------------------------------------------------------------------------------------------
-//                                        OBJECTS
-//------------------------------------------------------------------------------------------------------
-
-
-//------------------------------------------------------------------------------------------------------
 //                                        GLOBAL VARIABLES
 //------------------------------------------------------------------------------------------------------
 //-------------------------------------- ENUMS / STRUCTS
@@ -46,10 +41,8 @@ uint8_t input_code[MAX_INPUT_CODE_LENGTH] = {0};
 const uint8_t PROG_MODE_LENGTH = 5;
 const uint8_t MASTER_MODE_LENGTH = 5;
 uint8_t prog_mode_code[PROG_MODE_LENGTH] = {_S, _2, _5, _8, _N};
-// for in prog mode {'*', '9', '9', '#', '#'}
+// master code {'*', '9', '9', '#', '#'}
 uint8_t master_code[MASTER_MODE_LENGTH] = {_S, _9, _9, _N, _N};
-
-
 
 unsigned long prog_leds_timer = 0;
 bool prog_leds_flag = false;

@@ -55,6 +55,7 @@ void loop(void)
 							delay(1000);
 						}
 						code_length = 0;
+						relayControl(UNLOCK);
 						current_state = PROG_STATE;
 						break;
 
@@ -118,6 +119,7 @@ void loop(void)
 						beepSound(SHORT);
 						delay(50);
 					}
+					relayControl(LOCK);
 					current_state = MAIN_WORK_STATE;
 				}
 				else
